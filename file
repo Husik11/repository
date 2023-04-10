@@ -1,0 +1,12 @@
+import re
+s = "/discbdsv,ff(dew? fjee".lower()
+
+t =  re.findall(r'[^\W_]', s)
+s1 = ''
+t1 = "".join(t)
+for i in range(len(t)):
+    s1 += t[(len(t)) - 1 - i]
+if t1 == s1:
+    print(True)
+else:
+    print(False)
